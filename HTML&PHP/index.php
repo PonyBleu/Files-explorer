@@ -12,72 +12,77 @@
 
 		</head>
 		<body>
+			<header>
+				<div class="fondHeader"></div>
+				<h1>Explorateur de fichier</h1>
+			</header>
 
 			<div class="container">
+				<main id="page">
 
-				<?php
+					<?php
 
-            		$adresse = "/home/melanies/";
+	            		$adresse = "/home/melanies/";
 
 
-                	if (isset($_GET['dossier'])) 
-                	{
-						$adresse = $adresse.$_GET['dossier'];
-					}
+	                	if (isset($_GET['dossier'])) 
+	                	{
+							$adresse = $adresse.$_GET['dossier'];
+						}
 
-					$dirs = scandir($adresse);
+						$dirs = scandir($adresse);
 
-					foreach ($dirs as $folder) 
-					{
-						if (!is_dir($adresse.$folder)) 
+						foreach ($dirs as $folder) 
 						{
-						    if (isset($_GET['dossier']))
-						    {
-                        		echo "<a download='$folder' href=http://melanies.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fichier' src='../img/fichier.png'> $folder</a><br>";
-                    		}
-                    	}
-
-						else 
-						{
-							if ($folder == "..")
+							if (!is_dir($adresse.$folder)) 
 							{
 							    if (isset($_GET['dossier']))
 							    {
-							        echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour' src='../img/fleche.png'>$folder</a><br>";
-							    }
-
-							    else
-							    {
-							        echo "<a href='index.php'>$folder</a><br><img id='retour' src='../img/fleche.png'><br>";
-							    }
-							}
-							                
-							else if ($folder == ".") 
-							{
-							    echo "<a href='index.php'><img id='home' src='../img/home.png'></a><br>";
-							}
+	                        		echo "<a download='$folder' href=http://melanies.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fichier' src='../img/fichier.png'> $folder</a><br>";
+	                    		}
+	                    	}
 
 							else 
 							{
-							    if (isset($_GET['dossier']))
-							    {
-							        echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";
-							    }
-							           
-							    else 
-							    {
-							        echo "<a href='index.php?dossier=$folder/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";           
-							    }
+								if ($folder == "..")
+								{
+								    if (isset($_GET['dossier']))
+								    {
+								        echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour' src='../img/fleche.png'>$folder</a><br>";
+								    }
+
+								    else
+								    {
+								        echo "<a href='index.php'>$folder</a><br><img id='retour' src='../img/fleche.png'><br>";
+								    }
+								}
+								                
+								else if ($folder == ".") 
+								{
+								    echo "<a href='index.php'><img id='home' src='../img/home.png'></a><br>";
+								}
+
+								else 
+								{
+								    if (isset($_GET['dossier']))
+								    {
+								        echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";
+								    }
+								           
+								    else 
+								    {
+								        echo "<a href='index.php?dossier=$folder/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";           
+								    }
+								}
 							}
 						}
-					}
-	
-        		?>
+		
+	        		?>
 
-
+				</main>
  			</div>
  
  			
- 			<script src ="../JS/fichier.js" type="text/javascript"></script>
+ 			<script src ="../JS/ajax.js" type="text/javascript"></script>
   			</body>
 	</html>

@@ -1,7 +1,24 @@
 body
 {
-	background-color: #121646;
+	background-color: #04071e;
+	text-transform: uppercase;
+	font-family: "Perpetua";
 }
+
+header
+{
+	background-color: #000001;
+	height: 150px;
+	position: relative;
+}
+
+	h1
+	{
+		color: #fff;
+		font-size: 70px;
+		text-align: center;
+		padding-top: 50px;
+	}
 
 #dossier
 {
