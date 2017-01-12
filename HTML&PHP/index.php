@@ -43,7 +43,7 @@
 							{
 							    if (isset($_GET['dossier']))
 							    {
-							        echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour'src='../img/fleche.png'>$folder</a><br>";
+							        echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour' src='../img/fleche.png'>$folder</a><br>";
 							    }
 
 							    else
