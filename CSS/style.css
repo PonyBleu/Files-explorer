@@ -1,0 +1,41 @@
+body
+{
+	background-color: #121646;
+}
+
+#dossier
+{
+	width: 154px;
+	height: 100px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#fichier
+{
+	width: 75px;
+	height: 80px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#retour
+{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+a 
+{
+	color: #fff;
+	font-size: 30px;
+}
+
+a:hover
+{
+	text-decoration: none;
+	list-style: none;
+	font-size: 40px;
+	color: #fff;
+}
