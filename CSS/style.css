@@ -1,7 +1,6 @@
 body
 {
 	background-color: #04071e;
-	text-transform: uppercase;
 	font-family: "Perpetua";
 }
 
@@ -18,14 +17,21 @@ header
 		font-size: 70px;
 		text-align: center;
 		padding-top: 50px;
+		text-transform: uppercase;
 	}
+
+#home
+{
+	position: absolute;
+	margin-top: -117px;
+}
 
 #dossier
 {
 	width: 154px;
 	height: 100px;
-	display: inline-block;
-	margin-top: 10px;
+	display: block;
+	position: relative;
 }
 
 #fichier
@@ -41,12 +47,15 @@ header
 	width: 50px;
 	height: 50px;
 	margin-top: 10px;
+	position: absolute;
+	margin-top: -2%;
 }
 
 a 
 {
 	color: #fff;
 	font-size: 30px;
+	position: relative;
 }
 
 a:hover
@@ -55,4 +64,5 @@ a:hover
 	list-style: none;
 	font-size: 40px;
 	color: #fff;
+	position: relative;
 }

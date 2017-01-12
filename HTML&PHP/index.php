@@ -13,7 +13,6 @@
 		</head>
 		<body>
 			<header>
-				<div class="fondHeader"></div>
 				<h1>Explorateur de fichier</h1>
 			</header>
 
