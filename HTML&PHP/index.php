@@ -12,12 +12,14 @@
 
 		</head>
 		<body>
-			<header>
-				<h1>Explorateur de fichier</h1>
-			</header>
 
-			<div class="container">
-				<div class="page">
+			<div class="page">
+					<header>
+						<h1>Explorateur de fichier</h1>
+					</header>
+
+					<div class="container">
+				
 
 					<?php
 
