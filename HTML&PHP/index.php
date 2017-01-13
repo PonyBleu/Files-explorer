@@ -37,9 +37,28 @@
 						{
 							if (!is_dir($adresse.$folder)) 
 							{
-							    if (isset($_GET['dossier']))
-							    {
-	                        		echo "<a download='$folder' href=http://melanies.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fichier' src='../img/fichier.png'> $folder</a><br>";
+							    if (isset($_GET['dossier'])) 
+							    { ?>
+
+													<div class="row">
+													<div class="col-xs-12 col-md-6">
+
+								<?php 
+
+	                        		echo "<a href=http://melanies.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fichier' src='../img/fichier.png'> $folder</a><br>";
+	                    		?>
+													</div>
+													<div class="col-xs-12 col-md-6">
+
+								<?php 
+
+									echo "<a download='$folder' href=http://melanies.marmier.codeur.online/".$_GET['dossier'].$folder.">Telecharger fichier $folder</a><br>";
+	                    		?>
+
+	                    							</div>
+	                    							</div>
+
+	                    		<?php 
 	                    		}
 	                    	}
 
@@ -49,7 +68,7 @@
 								{
 								    if (isset($_GET['dossier']))
 								    {
-								        echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour' src='../img/fleche.png'>$folder</a><br>";
+								        echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='retour' src='../img/fleche.png'>$folder</a><br>";
 								    }
 
 								    else
