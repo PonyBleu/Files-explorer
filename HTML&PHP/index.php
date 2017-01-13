@@ -17,7 +17,7 @@
 			</header>
 
 			<div class="container">
-				<main id="page">
+				<div class="page">
 
 					<?php
 
@@ -65,12 +65,12 @@
 								{
 								    if (isset($_GET['dossier']))
 								    {
-								        echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";
+								        echo "<a class='link' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";
 								    }
 								           
 								    else 
 								    {
-								        echo "<a href='index.php?dossier=$folder/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";           
+								        echo "<a class='link' href='index.php?dossier=$folder/'><img id='dossier' src='../img/dossier.png'>$folder</a><br>";           
 								    }
 								}
 							}
@@ -78,7 +78,7 @@
 		
 	        		?>
 
-				</main>
+				</div>
  			</div>
  
  			
